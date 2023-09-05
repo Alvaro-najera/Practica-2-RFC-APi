@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 Najera</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+    <div class="center">
+        <!-- DIV PARA LA GENERACIÓN DEL RFC -->
+        <div class="container">
+            <b>PRACTICA 2 - GENERADOR DE CÓDIGO RFC</b>
+            <h5>GENERACIÓN DEL RFC</h5>
+            <label>Escribe su nombre:</label>
+            <input type="text" class="entrada" id="nombre" placeholder="Nombre" style="text-transform: uppercase;">
+            <label>Escribe su apellido paterno:</label>
+            <input type="text" class="entrada" id="apPat" placeholder="Apellido Paterno" style="text-transform: uppercase;">
+            <label>Escribe su apellido materno:</label>
+            <input type="text" class="entrada" id="apMat" placeholder="Apellido Materno" style="text-transform: uppercase;">
+            <label>Asigne su fecha de nacimiento:</label>
+            <input type="date" class="entrada" id="fecha">
+            <div>
+                <button id="generar" class="styled-button">GENERAR</button>
+                <button id="limpiar">LIMPIAR</button>
+            </div>
+            <label>RFC:</label>
+            <input type="text" class="resultado" id="resultadoFinal" style="text-transform: uppercase;">
+        </div>
+
+        <!-- DIV PARA LA REALIZACIÓN DEL CONSUMO DE UNA API -->
+        <div class="container">
+            <b>CONSUMO DE UNA API</b>
+            <br> <br>
+            <label>Escriba el ID del usuario:</label>
+            <input type="number" class="entrada" id="idusu" placeholder="ID">
+            <div>
+                <button id="selectUsu" class="styled-button">BUSCAR</button>
+                <button id="clean">LIMPIAR</button>
+            </div>
+            <label>Nombre y apellido paterno del usuario seleccionado:</label>
+            <p id="nUsu"></p>
+            <label>Email del usuario seleccionado:</label>
+            <p id="emailUsu"></p>
+        </div>
+    </div>
+
+    <script src="acciones.js"></script>
+</body>
+</html>
